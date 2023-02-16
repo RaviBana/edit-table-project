@@ -167,7 +167,7 @@ function Content() {
     }
 
     function handleDelete(e, I) {
-        let newdata = allData.filter((data) => data !== e)
+        let newdata = allData.filter((data, i) => i !== I)
         setAllData(newdata)
     }
 
